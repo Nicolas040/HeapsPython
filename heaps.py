@@ -60,6 +60,11 @@ class EmptyHeapException(Exception):
     pass
 
 class MinHeap:
+    """
+    A min-heap is a tree where all elements in the heap the nodes. This tree's properties are:
+    - A node's key is higher than or equal to its parent's (except for the root node), and
+    - A node's key is lower than or equal to any of its children's.
+    """
     
     def __init__(self):
         self._heap_ = []
@@ -139,6 +144,11 @@ class MinHeap:
         return result
 
 class MaxHeap:
+    """
+    A max-heap is a tree where all elements in the heap the nodes. This tree's properties are:
+    - A node's key is lower than or equal to its parent's (except for the root node), and
+    - A node's key is higher than or equal to any of its children's.
+    """
     
     def __init__(self):
         self._heap_ = []
